@@ -1,0 +1,92 @@
+body, html {
+  position: relative;
+  margin: 0;
+  min-height: 100vh; /* optionnal if it does not have a purpose */
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #202428;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.title {
+  height: 300px; /* guessed from your code */
+  display: grid; /* default make a single column*/
+  background: url("images/background1.jpg") 0 0 / cover; /* background covering */
+  outline: 8px solid #FCF6E6;
+}
+    
+.main-text {
+  margin-block: auto; /* vertical-centering in its row from here */
+  margin-inline-start:70px;
+  font-size: 100px; /* from your code */
+  color: #FCF6EA; /* from your code */
+}
+
+.main-box, .box1 {
+  background-color: #343440;
+  border-radius: 20px;
+  color: #FCF6EA;
+}
+
+.box1 {
+  background-color: #202428;
+  padding-top: 70px;
+  margin: 10px;
+  position: relative;
+}
+
+.essay {
+  margin: 0;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.links {
+  position: absolute;
+
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  
+}
+
+.link {
+ padding-left: 20px;
+ padding-right: 20px;
+
+  font-size: 40px;
+  box-shadow: inset 0 0 0 0 #FCF6EA;
+  color: #FCF6EA; 
+  transition: font-size .3s ease-in-out,
+    box-shadow .3s ease-in-out,
+    color .3s ease-in-out;
+}
+
+.link:hover {
+  box-shadow: inset 0 -46px 0 0 #FCF6EA;
+  color: #343440;
+}
+
+.links-block {
+  padding: 50px;
+}
+
+.dag-link {
+  color: #FCF6EA;
+}
+
+.title1 {
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  font-size: 50px;
+  margin: 0px;
+  width: 100%; /* to center it */
+  color: #FCF6EA;
+}
